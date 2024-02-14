@@ -1,0 +1,370 @@
+{
+  "survey": [
+    {
+      "categoryName": "HealthCare",
+      "userDetails": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "gender": "",
+        "email": ""
+      },
+
+      "questions": [
+        {
+          "question": "Name",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Address",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Email",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Gender",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Phone",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+
+        {
+          "question": "How satisfied are you with the healthcare services you receive?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "Have you faced any challenges in accessing healthcare in the past year?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "On a scale of 1 to 10, how would you rate your overall health?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Are you currently managing any chronic health conditions?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "How often do you engage in preventive health measures, such as regular check-ups and screenings?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "categoryName": "Yoga",
+      "userDetails": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "gender": "",
+        "email": ""
+      },
+
+      "questions": [
+        {
+          "question": "Name",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Address",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Email",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Gender",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Phone",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "How frequently do you practice yoga or mindfulness exercises?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "What benefits have you experienced from practicing yoga regularly?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Are you interested in exploring different types of yoga practices?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "How has yoga impacted your mental well-being?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Do you prefer attending yoga classes in person or practicing at home?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "categoryName": "Student",
+      "userDetails": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "gender": "",
+        "email": ""
+      },
+
+      "questions": [
+        {
+          "question": "Name",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Address",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Email",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Gender",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Phone",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "How would you rate your overall satisfaction with your educational experience?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "What challenges do you face as a student, and how do you cope with them?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "How often do you seek academic support or counseling services?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "Are you satisfied with the availability of extracurricular activities on campus?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "In what ways can the educational system be improved to better support students?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "categoryName": "Employee",
+      "userDetails": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "gender": "",
+        "email": ""
+      },
+
+      "questions": [
+        {
+          "question": "Name",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Address",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Email",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Gender",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Phone",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "How satisfied are you with your current job and work environment?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "Do you feel adequately supported by your employer in terms of professional development?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "How would you rate the work-life balance in your current job?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Have you experienced any workplace-related stress or burnout recently?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "What improvements would you suggest to enhance the overall employee experience?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "categoryName": "Diabetes",
+      "userDetails": {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "gender": "",
+        "email": ""
+      },
+
+      "questions": [
+        {
+          "question": "Name",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Address",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Email",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Gender",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Phone",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "How well are you managing your diabetes on a daily basis?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "What challenges do you face in maintaining a healthy lifestyle with diabetes?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        },
+        {
+          "question": "Are you satisfied with the support and information provided by healthcare professionals for managing diabetes?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": false
+        },
+        {
+          "question": "How often do you monitor your blood sugar levels?",
+          "isMultiChoice": true,
+          "options": ["", "", "", ""],
+          "isRequired": true
+        },
+        {
+          "question": "Have you participated in any diabetes education programs, and if so, how helpful were they?",
+          "isMultiChoice": false,
+          "options": [],
+          "isRequired": true
+        }
+      ]
+    }
+  ]
+}
