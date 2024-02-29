@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { getDatabase, ref, onValue } from "firebase/database";
 import TopNavbar from "../Navbar/TopNavbar";
-import backgroundImg from "../../Assets/option-writing-checkbox-concepts-survey.jpg";
+import backgroundImg from "../../Assets/Images/option-writing-checkbox-concepts-survey.jpg";
+import { getDatabase, ref, onValue } from "firebase/database";
 import { app } from "../../firebase";
-import { useNavigate,  useSearchParams } from "react-router-dom";
- 
+import { useSearchParams } from "react-router-dom";
+
 function DisplayPage() {
   const [responses, setResponses] = useState([]);
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  //   const id = searchParams.get("user");
   const email = searchParams.get("email");
- 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const database = getDatabase(app);
         const responsesRef = ref(database, "responses");
- 
+
         onValue(responsesRef, (snapshot) => {
           const data = snapshot.val();
- 
+
           if (data) {
             const responsesArray = Object.values(data);
             const selectedResponse = responsesArray.find(
@@ -35,10 +33,10 @@ function DisplayPage() {
         console.error("Error fetching responses:", error);
       }
     };
- 
+
     fetchData();
   }, [email]);
- 
+
   return (
     <div className="flex flex-col min-h-screen relative backdrop-blur-lg ">
       <div className="fixed inset-0 overflow-hidden" style={{ zIndex: "-1" }}>
@@ -57,7 +55,7 @@ function DisplayPage() {
             <div
               key={response.id}
               className="mb-7 p-3 bg-white blur-1"
-              style={{ borderRadius:"10px", cursor: "pointer" }}
+              style={{ borderRadius: "10px", cursor: "pointer" }}
             >
               <p className="font-semibold text-3xl mb-2">
                 Name: {response.userDetails.name}
@@ -69,7 +67,9 @@ function DisplayPage() {
               </p>
               <p className="text-2xl">Gender: {response.userDetails.gender}</p>
               <hr className="mt-5 "></hr>
-              <p className="font-semibold text-3xl mt-5 mb-2">Survey Responses</p>
+              <p className="font-semibold text-3xl mt-5 mb-2">
+                Survey Responses
+              </p>
               {Object.entries(response.survey).map(([category, answers]) => (
                 <div key={category} className="mb-4">
                   <p className="font-semibold text-2xl mb-2">{category}</p>
@@ -91,4 +91,3 @@ function DisplayPage() {
   );
 }
 export default DisplayPage;
- 

@@ -1,10 +1,9 @@
-//login.jsx
 import React, { useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import backgroundImg from "../../Assets/option-writing-checkbox-concepts-survey.jpg";
+import backgroundImg from "../../Assets/Images/option-writing-checkbox-concepts-survey.jpg";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import "@headlessui/react";

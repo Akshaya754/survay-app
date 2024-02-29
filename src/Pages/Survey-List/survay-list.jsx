@@ -1,12 +1,10 @@
-
-// survey-list.jsx
 import React, { useState, useEffect } from "react";
 import * as Tabs from "@radix-ui/react-tabs";
-import { getDatabase, ref, onValue, push, update } from "firebase/database";
+import { getDatabase, ref, onValue,  update } from "firebase/database";
 import { app } from "../../firebase";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import backgroundImg from "../../Assets/option-writing-checkbox-concepts-survey.jpg";
+import backgroundImg from "../../Assets/Images/option-writing-checkbox-concepts-survey.jpg";
 import TopNavbar from "../Navbar/TopNavbar";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
@@ -37,28 +35,33 @@ const SurveyList = () => {
         console.error("Error fetching data:", error);
       }
     };
-
     fetchData();
   }, []);
+
+
   const handleTabClick = (index) => {
-    const isSurveyCompleted = Object.keys(formData).length > 0; // Check if any survey response is submitted
-  
+    const isSurveyCompleted = Object.keys(formData).length > 0;
+
     if (isSurveyCompleted) {
-      toast.error("You have already submitting a survey. Cannot switch to another survey.");
+      toast.error(
+        "You have already submitted a survey. Cannot switch to another survey."
+      );
       return;
     }
-  
+
     const selectedCategory = categories[index];
     const currentCategory = categories[activeIndex];
-  
+
     if (
       formData[currentCategory.categoryName] &&
       currentCategory.categoryName !== selectedCategory.categoryName
     ) {
-      toast.error(`You are currently attending a survey on ${currentCategory.categoryName}. Please complete it before switching.`);
+      toast.error(
+        `You are currently attending a survey on ${currentCategory.categoryName}. Please complete it before switching.`
+      );
       return;
     }
-  
+
     setActiveIndex(index);
     setCurrentQuestionIndex(5);
   };

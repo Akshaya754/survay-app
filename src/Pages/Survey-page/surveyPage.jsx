@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 import TopNavbar from "../Navbar/TopNavbar";
-import backgroundImg from "../../Assets/option-writing-checkbox-concepts-survey.jpg";
+import backgroundImg from "../../Assets/Images/option-writing-checkbox-concepts-survey.jpg"
 import { app } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import { useSearchParams } from "react-router-dom";
 
 const ResponsesPage = () => {
   const [responses, setResponses] = useState([]);
   const [selectedResponse, setSelectedResponse] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [searchParams] = useSearchParams();
-
   const navigate = useNavigate();
 
   const formatDate = (timestamp) => {
-
     if (!timestamp) {
       return "Invalid Date";
     }
@@ -38,7 +34,6 @@ const ResponsesPage = () => {
 
         onValue(responsesRef, (snapshot) => {
           const data = snapshot.val();
-
           let responsesArray = [];
 
 
@@ -53,13 +48,11 @@ const ResponsesPage = () => {
                     .includes(selectedCategory.toLowerCase())
               )
             : responsesArray;
-
           setResponses([...filteredResponses]);
         } else {
           console.warn("No responses fetched or invalid data format:", data);
         }
         console.log(responsesArray.map(response => response.submissionTime));
-
       });
       } catch (error) {
         console.error("Error fetching responses:", error);
@@ -71,13 +64,10 @@ const ResponsesPage = () => {
 
   const handleCardClick = (response) => {
      setSelectedResponse(response);
-
     navigate(`/display?email=${response.userDetails.email}`);
-
   };
 
   const handleCategoryFilter = (category) => {
-
     setSelectedCategory(category);
   };
 
@@ -117,7 +107,6 @@ const ResponsesPage = () => {
       </div>
     );
   }
-
   return (
     <div className="flex flex-col min-h-screen relative  ">
       <div className="fixed inset-0 overflow-hidden" style={{ zIndex: "-1" }}>
@@ -185,7 +174,6 @@ const ResponsesPage = () => {
             </button>
           </div>
 
-
           {responses.map((response, index) => (
               <div
               key={response.id} 
@@ -204,6 +192,7 @@ const ResponsesPage = () => {
                 </p>
               </div>
           ))}
+    
         </div>
       </div>
     </div>

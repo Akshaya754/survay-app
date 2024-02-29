@@ -1,0 +1,24 @@
+{
+  "survey": [
+    {
+      "categoryName": "",
+      "response": [
+        {
+          "question": "",
+          "answer": ""
+        },
+        {
+          "question": "",
+          "answer": ""
+        }
+      ]
+    }
+  ],
+  "userDetails": {
+    "address": "",
+    "email": "",
+    "gender": "",
+    "name": "",
+    "phone": ""
+  }
+}

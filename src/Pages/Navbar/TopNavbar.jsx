@@ -1,6 +1,5 @@
-// TopNavbar.jsx
 import React from "react";
-import { Link , useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 
 const TopNavbar = () => {
@@ -9,13 +8,11 @@ const TopNavbar = () => {
   const handleLogout = () => {
     console.log("Logout clicked");
     navigate("/");
-
   };
 
   const handleTakeSurvey = () => {
     console.log("Take a Survey clicked");
     navigate("/user");
-
   };
 
   return (
@@ -24,8 +21,7 @@ const TopNavbar = () => {
         <Link to="/" className="text-white text-3xl font-bold">
           SurveyApp
         </Link>
-        <div className="absolute top-0  right-10" >
-        
+        <div className="absolute top-0  right-10">
           <Menu as="div" className=" relative mt-5 ">
             {({ open }) => (
               <>
